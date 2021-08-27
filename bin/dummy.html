@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css" integrity="sha256-46qynGAkLSFpVbEBog43gvNhfrOj+BmwXdxFgVK/Kvc=" crossorigin="anonymous" />  
+
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <div id="wrapper">
+        <div class="form-container">
+            <span class="form-heading">My Account</span>
+            <form action="data.php" method="get">
+                <label class="form-group">Personal Details</label><br><br>
+                <div class="input-group">
+                    <i class="fas fa-user"></i>
+                    <input type="text" name='fname' placeholder="Full Name..." required>
+                    <span class="bar"></span>
+                </div><br>
+                <div class="input-group">
+                    <i class="fa fa-genderless"></i>
+                    <input list="Gender" name='gen' name="browser" placeholder="Gender..." required>
+                    <datalist id="Gender">
+                      <option value="Male">
+                      <option value="Female">
+                      <option value="Others">
+                    </datalist>
+                    <span class="bar"></span>
+                </div><br>
+                <div class="input-group">
+                    <i class="fas fa-envelope"></i>
+                    <input type="email" name='em' placeholder="Email..." required>
+                    <span class="bar"></span>
+                </div><br>
+                <div class="input-group">
+                    <i class="fa fa-home"></i>
+                    <input type="text" name='add' placeholder="Address..." required>
+                    <span class="bar"></span>
+                </div><br>
+                <div class="input-group">
+                    <i class="fas fa-globe"></i>
+                    <input type="text" name='cn' placeholder="Country..." required>
+                    <span class="bar"></span>
+                </div><br>
+                <div class="input-group">
+                    <i class="fas fa-info"></i>
+                    <textarea name="message" name='ab' rows="7" cols="50" placeholder="About Yourself..."></textarea>
+                    <span class="bar"></span>
+                </div><br>
+                <div class="input-group">
+                    <button><i class="fab fa-telegram-plane"></i></button>
+                    <input type="submit" name="sub" />
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
